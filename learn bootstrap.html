@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap</title>
+    <link rel="stylesheet"href="bootstrapcss/bootstrap.css">
+    <style>
+        .container-fluid{
+            margin-bottom: 25px;
+        }
+        #red{
+            background-color: red;
+            height: 300px;
+        }
+        #green{
+            background-color: green;
+            height: 75px;
+        }
+        #brown{
+             background-color: brown;
+             height: 300px;
+        }
+        #blue{
+            background-color: blue;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container-fluid"id="red">
+       <div class="row"id="green">
+           <div class="col-lg-4 col-xl-6 col-md-3 col-sm-8 col-6 bg-primary text-white">col1</div>
+           <div class="col-lg-6 col-xl-4 col-md-5 col-sm-4 col-6 bg-secondary text-white">col2</div>
+           <div class="col-lg-2 col-md-4 col-sm-6 bg-success text-white">col3</div>
+       </div>
+
+   </div>
+                                <!--EXAMPLE-->
+                        <!-- x-small(col*)col(6,6(12--full width))
+                        small(col-sm-*)col(8,4,(6---empty))
+                        medium(col-md-*)col(3,5,4)
+                        large(col-lg-*)col(4,6,2)
+                        extra-large(col-xl-*)col(6,4,2)
+                        extra-extra-large(col-xxl-*) -->
+
+
+
+
+                        <!--nested column-->
+    <div class="container"id="brown">
+        <div class="row" id="blue">
+            <div class="col-lg-6 bg-primary text-white">col1
+                <div class="col-lg-4 bg-secondary text-white">subcol1</div>
+                <div class="col-lg-5 bg-info text-white">subcol2</div>
+                <div class="col-lg-3 bg-success text-white">subcol3</div>
+            </div>
+            <div class="col-lg-6 bg-primary text-white">
+                <div class="col-lg-3 bg-secondary text-white">col2</div>
+                <div class="col-lg-3 bg-danger text-white">col3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
